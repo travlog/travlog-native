@@ -16,6 +16,9 @@ export default class Login extends Component {
       password: ''
     }
   }
+  _login() {
+    Actions.Main()
+  }
   render() {
     return (
       <View style={styles.container}>
@@ -35,7 +38,7 @@ export default class Login extends Component {
           value={this.state.password}
         ></TextInput>
         <Button
-          onPress={Actions.Main}
+          onPress={this._login}
           title="Login"
           color="#841584"
         ></Button>

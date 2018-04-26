@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import {
   View,
   Text,
@@ -21,10 +20,10 @@ export default class SignUp extends Component{
   }
 }
 
-const styles = StyleSheet({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
   }
-})
+});

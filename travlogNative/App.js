@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import { Scene, Router } from 'react-native-router-flux';
+import { Scene, Router, Actions } from 'react-native-router-flux';
 import Login from './src/pages/Login'
 import SignUp from './src/pages/SignUp'
 import Main from './src/pages/Main'
@@ -18,10 +18,10 @@ import Main from './src/pages/Main'
 // });
 
 const scenes = Actions.create(
-  <Scene key="root">
-    <Scene key="login" component={Login} title="Login" initial={true}/>
-    <Scene key="register" component={SignUp} title="Register"/>
-    <Scene key="home" component={Main}/>
+  <Scene key="root" headerMode="none">
+    <Scene key="Login" component={Login} title="Login" initial={true}/>
+    <Scene key="SignUp" component={SignUp} title="Register"/>
+    <Scene key="Main" component={Main}/>
   </Scene>
 );
 
